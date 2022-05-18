@@ -1,3 +1,3 @@
-# Rinda - a craft vinegar drink
+# RINDA - a craft vinegar drink
 
 ![deer](/public/favicon.png)
