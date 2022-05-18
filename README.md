@@ -1,3 +1,3 @@
-# Pinch of Spice
+# Rinda - a craft vinegar drink
 
-![deer](/public/deer.png)
+![deer](/public/favicon.png)
