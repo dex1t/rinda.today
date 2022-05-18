@@ -2,27 +2,19 @@ import type { NextPage } from "next";
 import { css } from "@emotion/react";
 import tokens from "../components/DesignTokens";
 import Head from "next/head";
-import Header from "../components/Header";
-import Products from "../components/Products";
-import News from "../components/News";
-import Company from "../components/Company";
-import Members from "../components/Members";
-import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Pinch of Spice LLC. | ピンチオブスパイス</title>
+        <title>RINDA | Craft Vinegar Drink</title>
       </Head>
 
       <main css={layoutStyle}>
-        <Header />
-        <Products />
-        <News />
-        <Company />
-        <Members />
-        <Contact />
+        <div>
+          <h2>#RINDA_TODAY</h2>
+          <p>under construction</p>
+        </div>
       </main>
     </>
   );
@@ -32,8 +24,12 @@ export default Home;
 
 const layoutStyle = css`
   width: ${tokens.siteWidth.pc};
+  height: 100vh;
   margin: 0 auto;
-  padding: 32px 0 64px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: ${tokens.siteWidth.mobile}) {
     width: 100%;
