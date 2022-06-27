@@ -88,6 +88,26 @@ const layoutStyle = css`
   }
 
   @media (max-width: ${tokens.siteWidth.mobile}) {
-    width: 100%;
+    > section {
+      max-width: ${tokens.siteWidth.mobile};
+      padding: 32px;
+    }
+
+    img {
+      max-width: 200px;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 14px;
+    }
+
+    ul li {
+      font-size: 12px;
+    }
+
+    footer {
+      font-size: 10px;
+    }
   }
 `;
