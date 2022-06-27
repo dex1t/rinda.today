@@ -63,7 +63,7 @@ const layoutStyle = css`
     max-width: ${tokens.siteWidth.pc};
     margin: 0 auto;
     padding: 63px 73px;
-    animation: fadeIn 1s ease 0s 1 normal;
+    animation: fadeIn 2s ease 0s 1 normal;
   }
 
   h2 {
@@ -97,7 +97,7 @@ const layoutStyle = css`
     bottom: 32px;
     left: 50%;
     transform: translateX(-50%);
-    animation: fadeIn 1s ease 0s 1 normal;
+    animation: fadeIn 2s ease 0s 1 normal;
   }
 
   @media (max-width: ${tokens.siteWidth.mobile}) {
