@@ -11,10 +11,27 @@ const Home: NextPage = () => {
       </Head>
 
       <main css={layoutStyle}>
-        <div>
-          <h2>#RINDA_TODAY</h2>
-          <p>under construction</p>
-        </div>
+        <section>
+          <div>
+            <h2>クラフトビネガードリンク</h2>
+            <img src="/logo.svg" alt="RINDA" />
+          </div>
+          <ul>
+            <li>
+              <a
+                href="https://instagram.com/rinda.today/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                最新情報
+              </a>
+            </li>
+            <li>
+              <a href="https://pinch-of-spice.co/#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </section>
+        <footer>© Pinch of Spice LLC. All Rights Reserved</footer>
       </main>
     </>
   );
@@ -23,13 +40,52 @@ const Home: NextPage = () => {
 export default Home;
 
 const layoutStyle = css`
-  width: ${tokens.siteWidth.pc};
+  width: 100%;
   height: 100vh;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-image: url("/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  > section {
+    max-width: ${tokens.siteWidth.pc};
+    margin: 0 auto;
+    padding: 63px 73px;
+  }
+
+  h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    margin-bottom: 22px;
+  }
+
+  ul li {
+    margin-bottom: 16px;
+
+    a {
+      font-weight: bold;
+      line-height: 1.75;
+      padding-bottom: 5px;
+      border-bottom: 1px solid ${tokens.colors.black};
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  footer {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   @media (max-width: ${tokens.siteWidth.mobile}) {
     width: 100%;

@@ -1,14 +1,10 @@
 const tokens = {
   colors: {
-    ivory: "#fdf7f4",
     white: "#ffffff",
-    orange: "#f29f05",
-    red: "#f24405",
-    azuki: "#8c0303",
-    black: "#231b1b",
+    black: "#000000",
   },
   siteWidth: {
-    pc: "1024px",
+    pc: "834px",
     mobile: "480px",
   },
 };
