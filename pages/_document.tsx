@@ -6,7 +6,7 @@ export default function Document() {
   const desc =
     "あなたのひとときに寄り添う奈良生まれのクラフトビネガードリンク「RINDA」。ハーブやスパイスの風味を最大限引き出した新しい味わいのドリンクです。ノンアルコール、カフェインフリー、添加物不使用。";
   const url = "https://rinda.today/";
-  const ogp = "/ogp.jpg";
+  const ogp = `${url}ogp.jpg`;
 
   return (
     <Html>
