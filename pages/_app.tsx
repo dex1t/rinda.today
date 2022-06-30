@@ -1,9 +1,11 @@
 import type { AppProps } from "next/app";
 import { Global, css } from "@emotion/react";
 import tokens from "../components/DesignTokens";
+import { trackPageView } from "../hooks/trackPageView";
 import "ress";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  trackPageView();
   return (
     <>
       <Global styles={globalStyle} />

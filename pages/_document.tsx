@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { GA_ID } from "../utils/gtag";
 
 export default function Document() {
   const title = "RINDA（リンダ）| 奈良生まれのクラフトビネガードリンク";
@@ -26,6 +27,25 @@ export default function Document() {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={desc} />
         <meta name="twitter:card" content="summary" />
+        {GA_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                   window.dataLayer = window.dataLayer || [];
+                   function gtag(){dataLayer.push(arguments);}
+                   gtag('js', new Date());
+                   gtag('config', '${GA_ID}', {
+                     page_path: window.location.pathname,
+                   });`,
+              }}
+            />
+          </>
+        )}
       </Head>
       <body>
         <Main />
