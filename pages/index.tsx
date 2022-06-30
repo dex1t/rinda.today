@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>RINDA | Craft Vinegar Drink</title>
+        <title>RINDA(リンダ) | 奈良生まれのクラフトビネガードリンク</title>
       </Head>
 
       <main css={layoutStyle}>
