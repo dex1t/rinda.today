@@ -40,17 +40,6 @@ const Home: NextPage = () => {
 export default Home;
 
 const layoutStyle = css`
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    20% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   width: 100%;
   height: 100vh;
   background-image: url("/bg.png");
@@ -63,7 +52,6 @@ const layoutStyle = css`
     max-width: ${tokens.siteWidth.pc};
     margin: 0 auto;
     padding: 63px 73px;
-    animation: fadeIn 2s ease 0s 1 normal;
   }
 
   h2 {
@@ -97,7 +85,6 @@ const layoutStyle = css`
     bottom: 32px;
     left: 50%;
     transform: translateX(-50%);
-    animation: fadeIn 2s ease 0s 1 normal;
   }
 
   @media (max-width: ${tokens.siteWidth.mobile}) {
@@ -121,6 +108,27 @@ const layoutStyle = css`
 
     footer {
       font-size: 10px;
+    }
+  }
+
+  & {
+    animation: fadeIn 0.7s ease 0s 1 normal;
+  }
+
+  > section,
+  footer {
+    animation: fadeIn 2s ease 0s 1 normal;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 `;

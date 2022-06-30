@@ -21,7 +21,7 @@ const globalStyle = css`
       "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic",
       "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
     color: ${tokens.colors.black};
-    background: #e5e5e5;
+    background: #e4e1de;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
